@@ -3957,8 +3957,8 @@ function Get-UserProperties {
         $users | ForEach-Object {
 
             $props = @{}
-            $s = $_.Item('SamAccountName')
-            $props.Add('SamAccountName', "$s")
+            $s = $_.Item('samaccountname')
+            $props.Add('samaccountname', "$s")
 
             if($Properties -isnot [system.array]){
                 $Properties = @($Properties)
